@@ -48,6 +48,8 @@
             </div>
             
         <script>
+        
+        	var stopped = false;
     	
             window.requestAnimFrame = (function(callback){
                 return window.requestAnimationFrame ||
@@ -61,6 +63,11 @@
             })();
             
             function animate(myRectangle){
+            	
+            	if (stopped) {
+            		return;	
+            	}
+            	
                 var canvas = document.getElementById("myCanvas");
                 var context = canvas.getContext("2d");
                 
@@ -131,8 +138,17 @@
     	            
     	            animate(myRectangle);
     		    });
-            
 
+//     	    $(document).on( "pagebeforehide", function( event ) {
+//     	    	alert("sdf");
+//     	    };
+    	    
+    	    $("#pageAnimation").on( "pagebeforehide", function( event ) {
+    	    	stopped = true;
+    	    });
+    	    
+    	    
+    	        	    
         </script>        
             
             

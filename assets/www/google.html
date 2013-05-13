@@ -5,23 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>
         </title>
-        <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.1.0.min.css" />
-        <link rel="stylesheet" href="my.css" />
-        <style>
-            /* App custom styles */
-        </style>
-        <script src="jquery.mobile/jquery-1.7.2.min.js">
-        </script>
-        <script src="jquery.mobile/jquery.mobile-1.1.0.min.js">
-        </script>
-        <script src="cordova-1.8.1.js">
-        </script>
-        <script src="common.js">
-        </script>
+		  <link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.css">
+		  
+		  
+		  <!-- jQuery and jQuery Mobile -->
+		  <script src="js/jquery-1.9.1.js"></script>
+		  <script src="jquery.mobile-1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		  <script src="cordova-2.7.0.js"></script>
     </head>
     <body">
         <!-- Home -->
-        <div data-role="page" id="page1">
+        <div data-role="page" id="pageGoogle">
             <div data-theme="a" data-role="header">
                 <a class="hidden" data-role="button" data-transition="fade" href="#page1">
                     Button
@@ -46,7 +40,6 @@
                     Search
                 </a>
             </div>
-        </div>
         <script>
             
             $("#search").click(function () {
@@ -58,5 +51,6 @@
             });
         
         </script>
+        </div>
     </body>
 </html>
